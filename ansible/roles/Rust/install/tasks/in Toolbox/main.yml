@@ -9,7 +9,7 @@
 #   when: toolbox_status.containers | length == 0 or toolbox_status.containers.0.Name != toolbox_container_name
 
 - name: create toolbox
-  ansible.builtin.shell: toolbox create
+  ansible.builtin.shell: toolbox create -y
   become: true
   when: toolbox_status.containers | length == 0 or toolbox_status.containers.0.Name != toolbox_container_name
   async: 3600
