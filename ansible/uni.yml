@@ -1,7 +1,5 @@
 ---
 - hosts: test # local
-  vars:
-    source: "package"
 
   roles:
   - Rust

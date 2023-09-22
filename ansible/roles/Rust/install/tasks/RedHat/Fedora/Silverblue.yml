@@ -1,2 +1,17 @@
 - debug:
     msg: Install for Silverblue!
+
+- name: Gather facts on a specific container
+  containers.podman.podman_container_info:
+    # name: "{{ toolbox_container_name }}"
+  register: toolbox_status
+
+- name: debug
+  debug:
+    var: toolbox_status.containers
+
+# - name: create toolbox
+#   ansible.builtin.shell: toolbox create
+#   args:
+#     creates: /usr/local/bin/adb
+#   become: true

@@ -1,0 +1,3 @@
+install_source: default
+
+toolbox_container_name: "fedora-toolbox-{{ ansible_distribution_version }}"
