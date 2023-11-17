@@ -2,4 +2,6 @@ install_source: default
 
 in_Toolbox: true
 
+in_Distrobox: true
+
 toolbox_container_name: "fedora-toolbox-{{ ansible_distribution_version }}"
