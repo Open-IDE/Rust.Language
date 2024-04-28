@@ -1,0 +1,7 @@
+- name: Rust Language
+  hosts: localhost
+  vars:
+    debug: false
+    GCC_linker: true
+  roles:
+    - ansible-role-Rust
